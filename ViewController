@@ -1,0 +1,30 @@
+//
+//  ViewController.m
+//  functionAndVariable
+//
+//  Created by ConnectivitySW on 2022/01/19.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+
+- (IBAction)setCountButton:(id)sender {
+    if (_count == 1) {
+        self.setCountText.text = @"one";
+        _count = 0;
+    }else {
+        self.setCountText.text = @"zero";
+        _count = 1;
+    }
+}
+@end
